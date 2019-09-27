@@ -136,7 +136,7 @@ set wildmenu
 set wildmode=full
 
 " Ignore autocomplete for certain files
-set wildignore=*.o,*~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+set wildignore=*.o,*~,*.pyc,*/.hg/*,*/.svn/*,*/.DS_Store
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
