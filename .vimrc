@@ -381,6 +381,8 @@ let g:airline_powerline_fonts = 1
 " https://github.com/tpope/vim-fugitive                       "
 " https://vimawesome.com/plugin/fugitive-vim                  "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fugitive .git/tags support removed in favor of `:set tags^=./.git/tags;`
+:set tags^=./.git/tags;
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " RAILS.vim                                                   "
