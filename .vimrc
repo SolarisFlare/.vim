@@ -461,7 +461,7 @@ let g:airline_powerline_fonts = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " RAILS.vim                                                   "
 " vim-rails-holy-ground                                       "
-" https://github.com/casecommons/vim-rails                    "
+" https://github.com/tpope/vim-rails                          "
 " https://vimawesome.com/plugin/vim-rails-holy-ground         "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
