@@ -111,6 +111,9 @@ set showbreak=+++
 " No highlight
 noremap <leader><space> :noh<CR>
 
+" Disable highlight when <leader><CR> is pressed
+map <silent> <leader><CR> :noh<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Folding                                                     "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -161,9 +164,6 @@ set wrap "Wrap lines
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 map <C-space> ?
-
-" Disable highlight when <leader><CR> is pressed
-map <silent> <leader><CR> :noh<CR>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
