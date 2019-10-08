@@ -108,11 +108,8 @@ set textwidth=500
 " Broken line prefix
 set showbreak=+++
 
-" No Highlight
-map <leader>nh :noh<cr>
-
-" Turn off search highlight
-noremap <leader><space> :nohlsearch<CR>
+" No highlight
+noremap <leader><space> :noh<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Folding                                                     "
@@ -145,7 +142,7 @@ set wildignore=*.o,*~,*.pyc,*/.hg/*,*/.svn/*,*/.DS_Store
 " Convert tabs to spaces
 set expandtab
 
-" Be smart when using tbs ;)
+" Be smart when using tabs ;)
 set smarttab
 
 " 1 tab == 4 spaces
@@ -163,10 +160,10 @@ set wrap "Wrap lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
-map <c-space> ?
+map <C-space> ?
 
-" Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
+" Disable highlight when <leader><CR> is pressed
+map <silent> <leader><CR> :noh<CR>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -175,18 +172,18 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
+map <leader>bd :Bclose<CR>:tabclose<CR>gT
 
 " Close all the buffers
-map <leader>ba :bufdo bd<cr>
+map <leader>ba :bufdo bd<CR>
 
-map <leader>l :bnext<cr>
-map <leader>h :bprevious<cr>
+map <leader>l :bnext<CR>
+map <leader>h :bprevious<CR>
 
 " Useful mappings for managing tabs
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
+map <leader>tn :tabnew<CR>
+map <leader>to :tabonly<CR>
+map <leader>tc :tabclose<CR>
 map <leader>tm :tabmove
 map <leader>t<leader> :tabnext
 
@@ -197,10 +194,10 @@ au TabLeave * let g:lasttab = tabpagenr()
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
-map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+map <leader>te :tabedit <C-r>=expand("%:p:h")<CR>/
 
 " Switch CWD to the directory of the open buffer
-map <leader>cd :cd %:p:h<cr>:pwd<cr>
+map <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " Specify the behavior when switching between buffers
 try
@@ -231,7 +228,7 @@ set incsearch
 " Spell Check                                                 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
+map <leader>ss :setlocal spell!<CR>
 
 " Spell next
 map <leader>sn ]s
@@ -249,10 +246,10 @@ map <leader>s? z=
 " Remapping Native Vim                                        "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+nmap <M-j> mz:m+<CR>`z
+nmap <M-k> mz:m-2<CR>`z
+vmap <M-j> :m'>+<CR>`<my`>mzgv`yo`z
+vmap <M-k> :m'<-2<CR>`>my`<mzgv`yo`z
 
 if has("mac") || has("macunix")
   nmap <D-j> <M-j>
@@ -269,7 +266,7 @@ set whichwrap+=<,>,h,l
 " Miscellaneous                                               "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
+map <leader>pp :setlocal paste!<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                       PLUGINS                               "
@@ -295,9 +292,9 @@ let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
-map <leader>nn :NERDTreeToggle<cr>
+map <leader>nn :NERDTreeToggle<CR>
 map <leader>nb :NERDTreeFromBookmark<Space>
-map <leader>nf :NERDTreeFind<cr>
+map <leader>nf :NERDTreeFind<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MRU                                                        "
@@ -314,8 +311,8 @@ map <leader>f :MRU<CR>
 " https://vimawesome.com/plugin/yankstack                     "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:yankstack_yank_keys = ['y', 'd']
-nmap <c-p> <Plug>yankstack_substitute_older_paste
-nmap <c-n> <Plug>yankstack_substitute_newer_paste
+nmap <C-p> <Plug>yankstack_substitute_older_paste
+nmap <C-n> <Plug>yankstack_substitute_newer_paste
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim visual multi                                            "
