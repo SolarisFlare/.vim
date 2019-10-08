@@ -109,7 +109,7 @@ set textwidth=500
 set showbreak=+++
 
 " No highlight
-noremap <leader><space> :noh<CR>
+map <leader><space> :noh<CR>
 
 " Disable highlight when <leader><CR> is pressed
 map <silent> <leader><CR> :noh<CR>
@@ -324,8 +324,14 @@ nmap <C-n> <Plug>yankstack_substitute_newer_paste
 " Set specific leader for program
 let g:VM_leader = '\'
 
+" Disable default mappings
+let g:multi_cursor_use_default_mapping=0
+
 " Disable permanent mappings
 let g:VM_default_mappings = 0
+
+" Create the hash to fill with user preferences
+let g:VM_maps = {}
 
 " Default permanent mappings
 let g:VM_maps['Find Under']                  = '<C-n>'
