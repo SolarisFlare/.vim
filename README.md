@@ -12,3 +12,4 @@ Some Mapping notes for those crazy customizers:
 
 Enjoy!
 
+Also: I ***strongly*** suggest you install the [FiraCode font](https://github.com/tonsky/FiraCode) from https://github.com/tonsky/FiraCode and set your terminal to use it.  It is the best font I have ever found and is well optimized to look nice on all screens.  It even works inside of VSCode and its terminal!  (Also supports powerline).
