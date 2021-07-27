@@ -485,6 +485,13 @@ let g:airline_powerline_fonts = 1
 :set tags^=./.git/tags;
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-surround                                                "
+" surround.vim                                                "
+" https://github.com/tpope/vim-surround                       "
+" https://vimawesome.com/plugin/surround-vim                  "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Custom Functions                                            "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! CmdLine(str)
