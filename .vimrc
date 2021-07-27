@@ -82,7 +82,7 @@ set guioptions-=l
 set guioptions-=L
 
 " Show the statusline
-"set laststatus=2
+" set laststatus=2
 
 " Highlight search results
 set hlsearch
@@ -137,7 +137,6 @@ set wildmode=full
 
 " Ignore autocomplete for certain files
 set wildignore=*.o,*~,*.pyc,*/.hg/*,*/.svn/*,*/.DS_Store
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text, tab and indent related                                "
@@ -426,11 +425,7 @@ let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
 " Set Linters for ALE
-let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\   'css': ['prettier'],
-\   'ruby': ['prettier'],
-\}
+let g:ale_fixers = {}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline                                                     "
@@ -449,8 +444,36 @@ let g:ale_fixers = {
 " https://github.com/powerline/fonts
 let g:airline_powerline_fonts = 1
 
+" If not populated we can populate ourself to set the symbols
+" if !exists('g:airline_symbols')
+    " let g:airline_symbols = {}
+
+    " unicode symbols - used to render icons if font failure - uncomment if fonts are not patched and not being set right
+    " let g:airline_left_sep = '»'
+    " let g:airline_left_sep = '▶'
+    " let g:airline_right_sep = '«'
+    " let g:airline_right_sep = '◀'
+    " let g:airline_symbols.linenr = '␊'
+    " let g:airline_symbols.linenr = '␤'
+    " let g:airline_symbols.linenr = '¶'
+    " let g:airline_symbols.branch = '⎇'
+    " let g:airline_symbols.paste = 'ρ'
+    " let g:airline_symbols.paste = 'Þ'
+    " let g:airline_symbols.paste = '∥'
+    " let g:airline_symbols.whitespace = 'Ξ'
+
+    " airline symbols - used to render icons when font works - comment these if using patched fonts and symbols not being set
+    " let g:airline_left_sep = ''
+    " let g:airline_left_alt_sep = ''
+    " let g:airline_right_sep = ''
+    " let g:airline_right_alt_sep = ''
+    " let g:airline_symbols.linenr = ''
+    " let g:airline_symbols.branch = ''
+    " let g:airline_symbols.readonly = ''
+" endif
+
 " Define which plugins integrate for performance
-":let g:airline_extensions = []
+" let g:airline_extensions = []
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive                                                    "
