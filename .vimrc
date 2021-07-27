@@ -549,6 +549,27 @@ let g:floaterm_keymap_last = '<Leader>t>'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" fzf                                                         "
+" fzf.vim                                                     "
+" https://github.com/junegunn/fzf                             "
+" https://vimawesome.com/plugin/fzf                           "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Note: Pure fzf wrapper of terminal utility, no commands
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" fzf:heart:vim                                               "
+" fzf.vim                                                     "
+" https://github.com/junegunn/fzf.vim                         "
+" https://vimawesome.com/plugin/fzf-vim                       "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Wrapper of fzf adding command assistance
+" Requires fzf 0.23.0 or higher to be installed: https://github.com/junegunn/fzf
+" Note: Ag requires the silver searcher (ag): https://github.com/ggreer/the_silver_searcher
+" Note: Rg requires ripgrep (rg): https://github.com/BurntSushi/ripgrep
+" Note: Tags and Helptags require Perl
+" Note: For syntax highlighted preview, install bat: https://github.com/sharkdp/bat
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Custom Functions                                            "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! CmdLine(str)

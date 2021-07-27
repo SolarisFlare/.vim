@@ -45,3 +45,9 @@
 [submodule "bundle/vim-floaterm"]
 	path = bundle/vim-floaterm
 	url = git@github.com:voldikss/vim-floaterm.git
+[submodule "bundle/fzf.vim"]
+	path = bundle/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
+[submodule "bundle/fzf"]
+	path = bundle/fzf
+	url = git@github.com:junegunn/fzf.git
