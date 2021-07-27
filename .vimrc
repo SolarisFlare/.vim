@@ -462,13 +462,6 @@ let g:airline_powerline_fonts = 1
 :set tags^=./.git/tags;
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" RAILS.vim                                                   "
-" vim-rails-holy-ground                                       "
-" https://github.com/tpope/vim-rails                          "
-" https://vimawesome.com/plugin/vim-rails-holy-ground         "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Custom Functions                                            "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! CmdLine(str)

@@ -22,10 +22,6 @@
 	path = bundle/vim-visual-multi
 	url = https://github.com/mg979/vim-visual-multi
     branch = master
-[submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
-	url = https://github.com/tpope/vim-rails.git
-    branch = master
 [submodule "bundle/vim-yankstack"]
 	path = bundle/vim-yankstack
 	url = https://github.com/maxbrunsfeld/vim-yankstack.git
