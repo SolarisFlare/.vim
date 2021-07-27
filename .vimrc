@@ -526,6 +526,22 @@ let g:rainbow_active = 0
 " \}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-floaterm                                                "
+" floaterm.vim                                                "
+" https://github.com/voldikss/vim-floaterm                    "
+" https://vimawesome.com/plugin/vim-floaterm                  "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:floaterm_keymap_new = '<Leader>tn'
+let g:floaterm_keymap_kill = '<Leader>tk'
+let g:floaterm_keymap_toggle = '<Leader>tt'
+let g:floaterm_keymap_show = '<Leader>ts'
+let g:floaterm_keymap_hide = '<Leader>th'
+let g:floaterm_keymap_next = '<Leader>t]'
+let g:floaterm_keymap_prev = '<Leader>t['
+let g:floaterm_keymap_first = '<Leader>t<'
+let g:floaterm_keymap_last = '<Leader>t>'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-surround                                                "
 " surround.vim                                                "
 " https://github.com/tpope/vim-surround                       "

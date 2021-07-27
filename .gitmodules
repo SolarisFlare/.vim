@@ -42,3 +42,6 @@
 	path = bundle/rainbow
 	url = git@github.com:luochen1990/rainbow.git
     branch = master
+[submodule "bundle/vim-floaterm"]
+	path = bundle/vim-floaterm
+	url = git@github.com:voldikss/vim-floaterm.git
