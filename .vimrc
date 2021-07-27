@@ -542,6 +542,15 @@ let g:floaterm_keymap_first = '<Leader>t<'
 let g:floaterm_keymap_last = '<Leader>t>'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-commentary                                              "
+" commentary.vim                                              "
+" https://github.com/tpope/vim-commentary                     "
+" https://vimawesome.com/plugin/vim-commentary                "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" To add more file types (example is apache which uses # and has a space after it:
+" autocmd FileType apache set commentstring=#\ %s
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-surround                                                "
 " surround.vim                                                "
 " https://github.com/tpope/vim-surround                       "
