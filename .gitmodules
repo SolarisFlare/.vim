@@ -38,3 +38,7 @@
 	path = bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
     branch = master
+[submodule "bundle/rainbow"]
+	path = bundle/rainbow
+	url = git@github.com:luochen1990/rainbow.git
+    branch = master
