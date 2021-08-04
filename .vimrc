@@ -109,10 +109,10 @@ set textwidth=500
 set showbreak=+++
 
 " No highlight
-map <leader><space> :noh<CR>
+map <Leader><Space> :noh<CR>
 
-" Disable highlight when <leader><CR> is pressed
-map <silent> <leader><CR> :noh<CR>
+" Disable highlight when <Leader><CR> is pressed
+map <silent> <Leader><CR> :noh<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Folding                                                     "
@@ -161,7 +161,7 @@ set wrap "Wrap lines
 " Windows, Tabs, and Buffers                                  "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
+map <Space> /
 map <C-space> ?
 
 " Smart way to move between windows
@@ -171,20 +171,20 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bd :Bclose<CR>:tabclose<CR>gT
+map <Leader>bd :Bclose<CR>:tabclose<CR>gT
 
 " Close all the buffers
-map <leader>ba :bufdo bd<CR>
+map <Leader>ba :bufdo bd<CR>
 
-map <leader>l :bnext<CR>
-map <leader>h :bprevious<CR>
+map <Leader>l :bnext<CR>
+map <Leader>h :bprevious<CR>
 
 " Useful mappings for managing tabs
-map <leader>tn :tabnew<CR>
-map <leader>to :tabonly<CR>
-map <leader>tc :tabclose<CR>
-map <leader>tm :tabmove
-map <leader>t<leader> :tabnext
+map <Leader>t+ :tabnew<CR>
+map <Leader>to :tabonly<CR>
+map <Leader>tc :tabclose<CR>
+map <Leader>tm :tabmove
+map <Leader>t<Leader> :tabnext
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
@@ -193,10 +193,10 @@ au TabLeave * let g:lasttab = tabpagenr()
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
-map <leader>te :tabedit <C-r>=expand("%:p:h")<CR>/
+map <Leader>te :tabedit <C-r>=expand("%:p:h")<CR>/
 
 " Switch CWD to the directory of the open buffer
-map <leader>cd :cd %:p:h<CR>:pwd<CR>
+map <Leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " Specify the behavior when switching between buffers
 try
@@ -227,19 +227,19 @@ set incsearch
 " Spell Check                                                 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<CR>
+map <Leader>ss :setlocal spell!<CR>
 
 " Spell next
-map <leader>sn ]s
+map <Leader>sn ]s
 
 " Spell previous
-map <leader>sp [s
+map <Leader>sp [s
 
 " Spell add(save)
-map <leader>sa zg
+map <Leader>sa zg
 
 " Spell what(list)
-map <leader>s? z=
+map <Leader>s? z=
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remapping Native Vim                                        "
@@ -265,7 +265,7 @@ set whichwrap+=<,>,h,l
 " Miscellaneous                                               "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle paste mode on and off
-map <leader>pp :setlocal paste!<CR>
+map <Leader>pp :setlocal paste!<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                       PLUGINS                               "
@@ -291,9 +291,9 @@ let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
-map <leader>nn :NERDTreeToggle<CR>
-map <leader>nb :NERDTreeFromBookmark<Space>
-map <leader>nf :NERDTreeFind<CR>
+map <Leader>nn :NERDTreeToggle<CR>
+map <Leader>nb :NERDTreeFromBookmark<Space>
+map <Leader>nf :NERDTreeFind<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MRU                                                        "
@@ -302,7 +302,7 @@ map <leader>nf :NERDTreeFind<CR>
 " https://vimawesome.com/plugin/mru-vim                      "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
+map <Leader>f :MRU<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YankStack                                                   "
@@ -319,7 +319,7 @@ nmap <C-n> <Plug>yankstack_substitute_newer_paste
 " https://github.com/mg979/vim-visual-multi                   "
 " https://vimawesome.com/plugin/vim-multiple-cursors          "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" \\ to start visual multi (<leader><VM_leader>)
+" \\ to start visual multi (<Leader><VM_leader>)
 " Set specific leader for program
 let g:VM_leader = '\'
 
