@@ -148,7 +148,7 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set tabstop=4
+set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 
@@ -156,6 +156,11 @@ set shiftwidth=4
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+" Tab settings for specific files
+autocmd FileType markdown setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType python setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Windows, Tabs, and Buffers                                  "
