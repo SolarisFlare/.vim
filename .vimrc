@@ -159,8 +159,9 @@ set wrap "Wrap lines
 
 " Tab settings for specific files
 autocmd FileType markdown setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+" autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
+" autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+" autocmd FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType python setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
