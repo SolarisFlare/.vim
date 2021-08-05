@@ -158,11 +158,25 @@ set si "Smart indent
 set wrap "Wrap lines
 
 " Tab settings for specific files
-autocmd FileType markdown setlocal tabstop=2 softtabstop=2 shiftwidth=2
+" HTML - I prefer 4 for readability
 " autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+" JavaScript - I prefer 4 for readability
 " autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+" JSON - 2 is standard for compression but 4 is better for readability 
 " autocmd FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+" Markdown - some linters want 2 although CommonMark spec disagrees - see ordered list v.s. unordered list - also many renderers may not like 2 (mdv, sometimes pandoc, ...)
+" autocmd FileType markdown setlocal tabstop=2 softtabstop=2 shiftwidth=2 
+
+" YAML - suggests 2 spaces but I personally prefer 4 and you generally use either 2 or 4
+" autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 
+
+" Python - suggests 2, as long as consistent it will work though but most linters want 2
 autocmd FileType python setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+" Ruby - suggests 2, as long as consistent it will work though but most linters want 2
 autocmd FileType ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
